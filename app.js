@@ -9,6 +9,11 @@ function onReady() {
     let newLi = document.createElement("li"); // create a new li
     let checkbox = document.createElement('input') // create a new input then
     checkbox.type = "checkbox"; // set the input type to checkbox
+    newLi.textContent = title; // set the title
+    newLi.appendChild(checkbox); // attach the checkbox to the li
+    toDoList.appendChild(newLi); // attach the li to the ul
+    newToDoText.value = ''; // empty the input
+
   });
 }
 
